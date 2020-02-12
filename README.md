@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **React Clock**
 
-## Available Scripts
+![screenshot](./ReactClock.PNG)
 
-In the project directory, you can run:
+## Presentation
 
-### `yarn start`
+First React project.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Based on [this project](https://www.golangprograms.com/react-js-projects-for-beginners/react-js-compass-clock.html)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Acces [it here](https://debourgeo.github.io/ReactClock)
 
-### `yarn test`
+[x] Codebase formated by [Prettier](https://prettier.io/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **[React Clock](https://debourgeo.github.io/ReactClock)**
 
-### `yarn build`
+Consists in a clock made with react, which is updated every second, created dynamically thanks to a custom component.
+Created using classes and functionnal components, to know what those are about, before switching to hooks.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributors
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+-   [**Denis Bourgeois**](https://github.com/Debourgeo)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## (Feedback)
 
-### `yarn eject`
+-   Not responsive as of now, no time for it just yet
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Langages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   HTML
+-   CSS
+-   JS
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Framework
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-   React
 
-## Learn More
+## Libraries
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   /
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## State
 
-### Code Splitting
+In a good spot, needs more work for the responsive part
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Thanks
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+-   [BeCode](https://www.becode.org/).
+-   The guy who had this idea originaly.
+-   [Loïc Lissens](https://github.com/LoicLissens), for some CSS tips.
+-   [Vincent Bouton](https://github.com/Vincent-bouton) and [Valeriya Kozlova](https://github.com/ValeriyaKozlova), for the "return" shenanigans.
