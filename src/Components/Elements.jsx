@@ -7,6 +7,44 @@ const addZero = element => {
     return element;
 };
 
+const ordinal = (index, unit) => {
+    if (unit === "th") {
+        let j = index % 10;
+        let k = index % 100;
+
+        if (j === 1 && k !== 11) {
+            unit = "st";
+        }
+        if (j === 2 && k !== 12) {
+            unit = "nd";
+        }
+        if (j === 3 && k !== 13) {
+            unit = "rd";
+        }
+    }
+    return unit;
+};
+
+const arrayGenerator = quantity => {
+    let array = [];
+    if (quantity === 60) {
+        let i = 0;
+
+        do {
+            array.push(i);
+            i += 1;
+        } while (i < quantity);
+    } else {
+        let i = quantity;
+
+        do {
+            array.unshift(i);
+            i -= 1;
+        } while (i > 0);
+    }
+    return array;
+};
+
 const Elements = props => {
     const toCompare = props.toCompare;
     const type = props.type;
@@ -30,20 +68,14 @@ const Elements = props => {
                                     (360 / elements.length) * toCompare}deg)`
                             }}
                         >
-                            {`${element}`}
+                            <p>{`${element}`}</p>
                         </div>
                     );
                 })}
             </div>
         );
     } else if (quantity) {
-        let i = quantity;
-        let array = [];
-
-        do {
-            array.unshift(i);
-            i -= 1;
-        } while (i > 0);
+        const array = arrayGenerator(quantity);
 
         return (
             <div>
@@ -59,7 +91,7 @@ const Elements = props => {
                                     (360 / quantity) * toCompare}deg)`
                             }}
                         >
-                            {`${addZero(index)} ${unit}`}
+                            <p>{`${addZero(index)} ${ordinal(index, unit)}`}</p>
                         </div>
                     );
                 })}

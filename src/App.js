@@ -61,10 +61,6 @@ class App extends React.Component {
 
     render() {
         const daysInMonth = (year, month) => new Date(year, month, 0).getDate();
-        const nbrOfHours = 24;
-        const nbrOfMinutes = 60;
-        const nbrOfSeconds = 60;
-
         const months = [
             "Jan",
             "Feb",
@@ -80,23 +76,28 @@ class App extends React.Component {
             "Dec"
         ];
         const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+        const nbrOfHours = 24;
+        const nbrOfMinutes = 60;
+        const nbrOfSeconds = 60;
+
         return (
             <div className="container">
                 <div className="year">
                     <p>{this.state.year}</p>
-                </div>
-                <div className="months">
-                    <Elements
-                        toCompare={this.state.monthNbr}
-                        elements={months}
-                        type="month"
-                    />
                 </div>
                 <div className="days">
                     <Elements
                         toCompare={this.state.dayNbr}
                         elements={days}
                         type="day"
+                    />
+                </div>
+                <div className="months">
+                    <Elements
+                        toCompare={this.state.monthNbr}
+                        elements={months}
+                        type="month"
                     />
                 </div>
                 <div className="dates">
